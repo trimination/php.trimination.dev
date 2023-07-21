@@ -1,0 +1,29 @@
+@import "colors.css";
+
+body, body > * {
+    transition: var(--themeTransitionTimer) linear;
+}
+
+@media (min-width: 850px) {
+    .nav-menu a {
+        color: var(--text);
+    }
+
+    .nav-menu a.dark {
+        color: var(--darkText);
+    }
+
+    .nav-menu a:hover {
+        color: var(--accent);
+        border-bottom: 5px solid var(--accent);
+        padding-top: 5px;
+        transition: var(--themeTransitionTimer) linear;
+    }
+
+    .nav-menu a.dark:hover {
+        color: var(--darkAccent);
+        border-bottom: 5px solid var(--darkAccent);
+        padding-top: 5px;
+        transition: var(--themeTransitionTimer) linear;
+    }
+}

@@ -1,0 +1,18 @@
+:root {
+    --darkBg: #00111a;
+    --darkText: #c5c5c5;
+    --darkAccent: #009cff;
+    --darkResponsiveBg: #000;
+
+    --bg: #e7e6e6;
+    --text: #000000;
+    --accent: #037ac4;
+    --responsiveBg: #002133;
+
+    --themeTransitionTimer: 300ms;
+
+    --card-front: #006ea6;
+    --card-back: #ffffff;
+    --card-front-dark: #006ea6;
+    --card-back-dark: #ffffff;
+}

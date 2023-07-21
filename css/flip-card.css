@@ -1,0 +1,41 @@
+@import "colors.css";
+/** source: https://codepen.io/edeesims/pen/wvpYWW
+ * modified: removed absolute position on .card, renamed .card,
+ * changed color and sizing, front/back to flex
+ **/
+.tech-stack-card {
+    width: 150px;
+    height: 150px;
+    perspective: 500px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.tech-stack-card:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 300px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back {
+    transform: rotateY(180deg);
+}
